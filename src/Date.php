@@ -202,7 +202,7 @@ class Date extends Carbon {
             $character = $format[$i];
 
             // Check if we can replace it with a translated version.
-            if (in_array($character, array('D', 'l', 'F', 'M')))
+            if (in_array($character, array('D', 'l', 'F', 'M', 'a')))
             {
                 // Check escaped characters.
                 if ($i > 0 and $format[$i - 1] == '\\') continue;
